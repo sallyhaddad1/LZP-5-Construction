@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LZP-5- Construction  1</title>
+    <script src=https://cdn.tailwindcss.com></script>
+    <link href=https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap rel="stylesheet">
+    
+    <style>
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9; 
+            overscroll-behavior: none; 
+            margin: 0; 
+        }
+        .slide {
+            display: none; 
+            animation: fadeIn 0.4s ease-in-out;
+            height: 100%; 
+            overflow: hidden; 
+        }
+        .slide-visible {
+            display: block; 
+        }
+        .slide-hidden { 
+            display: none !important;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .slide-content-wrapper {
+             height: calc(100% - 4rem - 1px); 
+             overflow-y: auto;
+             padding-bottom: 2rem; 
+        }
+.slide-content-wrapper1 {
+             height: calc(100% - 4rem - 1px); 
+             overflow-y: auto;
+             padding-bottom: 2rem; 
+             margin-left: 300px;
+width: 1500px;
+
+        }
+
+        .slide-content-wrapper::-webkit-scrollbar { width: 8px;  }
+        .slide-content-wrapper::-webkit-scrollbar-track { background: #e2e8f0; border-radius: 10px; }
+        .slide-content-wrapper::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 10px; }
+        .slide-content-wrapper::-webkit-scrollbar-thumb:hover { background: #1d4ed8; }
+         .slide-header {
+             position: sticky;
+             top: 0;
+             background-color: rgba(241, 245, 249, 0.95); 
+             backdrop-filter: blur(5px);
+             padding-top: 0.25rem; 
+             padding-bottom: 0.75rem; 
+             z-index: 5; 
+             border-bottom: 1px solid #e2e8f0;
+         }
+         /* Placeholder style for missing images */
+         img.placeholder-image {
+             background-color: #e2e8f0;
+             border: 2px dashed #94a3b8;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             color: #64748b;
+             font-weight: bold;
+             text-align: center;
+         }
+    </style>
+</head>
+<body class="flex flex-col h-screen text-slate-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md w-full p-4 z-10 flex justify-between items-center flex-shrink-0 border-b border-slate-200">
+        <div class="flex items-center min-w-0"> 
+            <div class="w-10 h-10 bg-blue-800 rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                <!-- Icon representing Industrial Equipment -->
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a8 8 0 11-14.856 0M12 21a8 8 0 100-16 8 8 0 000 16z"></path></svg>
+            </div>
+            <div class="ml-3 truncate">
+                <h1 class="text-lg md:text-xl font-bold text-slate-900">TRAINING ON CONSTRUCTION </h1>
+                <p class="text-xs text-blue-600 font-semibold uppercase tracking-wide"> Constraction Works</p>
+            </div>
+        </div>
+        <div class="text-sm font-medium text-slate-500 flex-shrink-0 ml-2 bg-slate-100 px-3 py-1 rounded-full" id="slide-counter">Slide 1 / 18</div>
+    </header>
+
+ <!-- Main Slide Container -->
+    <main id="slide-container" class="flex-1 overflow-hidden p-4 md:p-8 lg:p-12 relative">
+        
+        <!-- Slide 0: Title -->
+        <section id="slide-0" class="slide slide-visible flex flex-col justify-center items-center text-center p-4">
+            <div class="bg-white p-10 md:p-16 rounded-2xl shadow-xl max-w-4xl w-full border-t-8 border-blue-800">
+                <span class="block text-sm font-bold text-blue-600 uppercase tracking-widest mb-2">Epc Works For Lower Zakum Long Term Development Plan Package 5 – Das Island Terminal Facilities </span>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6">Civil Constraction Works <br/><span class="text-blue-700">Introduction</span></h1>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mb-8 rounded-full"></div>
+                <p class="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">Major Construction Activities </p>
+                 <button id="start-btn" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105">
+    Start Course
+</button>
+            </div>
+        </section>
+
+
+        <!-- Slide 1: Course Overview -->
+        <section id="slide-1" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Course Overview</h2>
+             <div class="slide-content-wrapper">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-slate-200">
+                    <p class="text-lg text-slate-600 mb-8">An overview of the major construction activities that form the backbone of our project.</p>
+                
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Session 1 Card -->
+                        <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 hover:shadow-md transition-shadow">
+                           <div class="space-y-4">
+
+  <div class="flex items-center">
+    <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">1</div>
+    <h3 class="ml-4 text-xl font-bold text-blue-900">SITE PREPARATION & DEMOLISHING</h3>
+  </div>
+
+  <div class="flex items-center">
+    <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">2</div>
+    <h3 class="ml-4 text-xl font-bold text-blue-900">PIPELINES</h3>
+  </div>
+
+  <div class="flex items-center">
+    <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">3</div>
+    <h3 class="ml-4 text-xl font-bold text-blue-900">MAIN PROCESS AREA</h3>
+  </div>
+
+  <div class="flex items-center">
+    <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">4</div>
+    <h3 class="ml-4 text-xl font-bold text-blue-900">BUILDING AREA</h3>
+  </div>
+
+  <div class="flex items-center">
+    <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">5</div>
+    <h3 class="ml-4 text-xl font-bold text-blue-900">SEA WATER INTAKE</h3>
+  </div>
+
+  <div class="flex items-center">
+    <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">6</div>
+    <h3 class="ml-4 text-xl font-bold text-blue-900">132 KV CABLE TRENCH</h3>
+  </div>
+
+  <div class="flex items-center">
+    <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">7</div>
+    <h3 class="ml-4 text-xl font-bold text-blue-900">TELECOME CABLE TRENCH</h3>
+  </div>
+
+</div>
+
+                        </div>
+                     </div>
+</div>
+             </div>
+        </section>
+
+
+  <!-- Slide 2: SITE PREPARATION & DEMOLISHING  -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Site Preparation & Demolishing </h2>
+            <div class="slide-content-wrapper">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                    <img src="images/SITE PREPARATION & DEMOLISHING.png"
+                        alt="Slide 13: Site Preparation"
+                        class="zoomable w-full h-full object-contain cursor-zoom-in">
+                </div>
+
+                        </div>
+  <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/SITE PREPARATION & DEMOLISHING1.png" alt="Slide 15: Plate and Frame Diagram"  class="zoomable w-full h-full object-contain cursor-zoom-in">
+>
+                         
+                        </div>
+                        </div>
+                           </div>
+
+                       
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 3: SITE PREPARATION & DEMOLISHING  -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Site Preparation & Demolishing </h2>
+            <div class="slide-content-wrapper">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/SITE PREPARATION & DEMOLISHING2.jpg" alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/SITE PREPARATION & DEMOLISHING4.png" alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                             </div>
+                        </div>
+                                           </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 4: SITE PREPARATION & DEMOLISHING  -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Site Preparation & Demolishing </h2>
+            <div class="slide-content-wrapper">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/SITE PREPARATION & DEMOLISHING5.png" alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">>
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/SITE PREPARATION & DEMOLISHING6.png" alt="Slide 15: Plate and Frame Diagram"  class="zoomable w-full h-full object-contain cursor-zoom-in">>
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                             </div>
+                        </div>
+                                           </div>
+                </div>
+            </div>
+        </section>
+<!-- Slide 5: OVERALL PIPELINE ROUTE    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Overall Pipeline Route </h2>
+            <div class="slide-content-wrapper">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/OVERALL PIPELINE ROUTE.png" alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">>
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/OVERALL PIPELINE ROUTE1.png" alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">>
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+                </div>
+            </div>
+        </section>
+<!-- Slide 6: OVERALL PIPELINE ROUTE    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Overall Pipeline Route </h2>
+            <div class="slide-content-wrapper">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/OVERALL PIPELINE ROUTE2.png" alt="Slide 13: Air Cooler Diagram" 
+							 class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                           <h3 class="text-xl font-bold text-slate-900 mb-3"> Pipe Rack  </h3>
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/OVERALL PIPELINE ROUTE  ( PIPE RACK )5.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 7: OVERALL PIPELINE ROUTE    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Overall Pipeline Route   </h2>
+            <div class="slide-content-wrapper">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Pipe Rack  </h3>
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/OVERALL PIPELINE ROUTE  ( PIPE RACK )6.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                           <h3 class="text-xl font-bold text-slate-900 mb-3"> Pipe Rack  </h3>
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/OVERALL PIPELINE ROUTE  ( PIPE RACK )7.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+                </div>
+            </div>
+        </section>
+
+
+<!-- Slide 8: OVERALL PIPELINE ROUTE    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Overall Pipeline Route   </h2>
+            <div class="slide-content-wrapper">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Trestle Support  </h3>
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/OVERALL PIPELINE ROUTE  (TRESTLE SUPPORT).jpg" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                           <h3 class="text-xl font-bold text-slate-900 mb-3">Trestle Support  </h3>
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/OVERALL PIPELINE ROUTE  (TRESTLE SUPPORT)1.jpg"
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+                </div>
+            </div>
+        </section>
+<!-- Slide 9: OVERALL PIPELINE ROUTE    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Overall Pipeline Route   </h2>
+            <div class="slide-content-wrapper">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Trestle Support </h3>
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/OVERALL PIPELINE ROUTE  (TRESTLE SUPPORT)2.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                           <h3 class="text-xl font-bold text-slate-900 mb-3">Frame & T  Support  </h3>
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/OVERALL PIPELINE ROUTE  (FRAME & T  SUPPORT).jpg" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 10: OVERALL PIPELINE ROUTE    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Overall Pipeline Route   </h2>
+            <div class="slide-content-wrapper">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Trestle Support </h3>
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/OVERALL PIPELINE ROUTE  (FRAME & T  SUPPORT)1.jpg" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                           <h3 class="text-xl font-bold text-slate-900 mb-3"> Culvert   </h3>
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/OVERALL PIPELINE ROUTE ( CULVERT ).png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 11: OVERALL PIPELINE ROUTE    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Overall Pipeline Route   </h2>
+            <div class="slide-content-wrapper">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3"> Culvert  </h3>
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/OVERALL PIPELINE ROUTE ( CULVERT )1.jpg" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                           <h3 class="text-xl font-bold text-slate-900 mb-3"> Culvert   </h3>
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/OVERALL PIPELINE ROUTE ( CULVERT )2.jpg" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 12: OVERALL PIPELINE ROUTE    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Overall Pipeline Route   </h2>
+            <div class="slide-content-wrapper">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Culvert  </h3>
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/OVERALL PIPELINE ROUTE ( CULVERT )3.jpg" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                           <h3 class="text-xl font-bold text-slate-900 mb-3">Culvert   </h3>
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/OVERALL PIPELINE ROUTE ( CULVERT )4.jpg" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 13: OVERALL PIPELINE ROUTE    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Overall Pipeline Route   </h2>
+            <div class="slide-content-wrapper">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Culvert  </h3>
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/OVERALL PIPELINE ROUTE ( CULVERT )5.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                           <h3 class="text-xl font-bold text-slate-900 mb-3">Pipe Bridge    </h3>
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/OVERALL PIPELINE ROUTE ( PIPE BRIDGE ).png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 14: OVERALL PIPELINE ROUTE    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Overall Pipeline Route   </h2>
+            <div class="slide-content-wrapper">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Pipe Bridge  </h3>
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/OVERALL PIPELINE ROUTE ( PIPE BRIDGE )1.jpg" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                           <h3 class="text-xl font-bold text-slate-900 mb-3">Pipe Bridge    </h3>
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/OVERALL PIPELINE ROUTE ( PIPE BRIDGE )2.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 15: OVERALL PIPELINE ROUTE    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Overall Pipeline Route   </h2>
+            <div class="slide-content-wrapper1">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Pipe Bridge  </h3>
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/OVERALL PIPELINE ROUTE ( PIPE BRIDGE )3.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                   
+                </div>
+            </div>
+        </section>
+
+
+<!-- Slide 16: New Plant Area    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">New Plant Area    </h2>
+            <div class="slide-content-wrapper1 " >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/NEW PLANT AREA.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 16: main PLANT AREA    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Main Process Area    </h2>
+            <div class="slide-content-wrapper1 " >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/MAIN PROCESS AREA.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 17: main process AREA     -->
+        <section id="slide-5" class="slide">
+            <div class="slide-content-wrapper">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Main Process Area  </h3>
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/MAIN PROCESS AREA1.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                           <h3 class="text-xl font-bold text-slate-900 mb-3">Main Process Area  - 3D Model Development - Overall  </h3>
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/MAIN PROCESS AREA2.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 18: main process AREA    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Main Process Area - 3D Model Development - Units   </h2>
+            <div class="slide-content-wrapper">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Process Train  </h3>
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/MAIN PROCESS AREA3 Process Train.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                           <h3 class="text-xl font-bold text-slate-900 mb-3">Process Common  </h3>
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/MAIN PROCESS AREA3 Process Common.png" alt="Slide 15: Plate and Frame Diagram" class="w-full h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 ">
+                           <h3 class="text-xl font-bold text-slate-900 mb-3">Hot Oil   </h3>
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/MAIN PROCESS AREA3 Hot Oil.png" alt="Slide 15: Plate and Frame Diagram" class="w-full h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 19: main process AREA     -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Plot Plan – Process Train Modules    </h2>
+            <div class="slide-content-wrapper">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/MAIN PROCESS AREA4-1.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/MAIN PROCESS AREA4-2.png" alt="Slide 15: Plate and Frame Diagram" class="w-full h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 20: main process AREA     -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Plot Plan – Hot Oil Module   </h2>
+            <div class="slide-content-wrapper1 " >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/MAIN PROCESS AREA5.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 21: main process AREA     -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Plot Plan – Process Common Module   </h2>
+            <div class="slide-content-wrapper1 " >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/MAIN PROCESS AREA6.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 22: main process AREA     -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Plot Plan – PAR Modules   </h2>
+            <div class="slide-content-wrapper1 " >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/MAIN PROCESS AREA7.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 23: main process AREA    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Main Process Area ( Module )   </h2>
+            <div class="slide-content-wrapper">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/MAIN PROCESS AREA ( Module).png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/MAIN PROCESS AREA ( Module)1.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 ">
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/MAIN PROCESS AREA ( Module)2.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 24: BUILDING AREA     -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Building Area   </h2>
+            <div class="slide-content-wrapper1">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/BUILDING AREA.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                          </div>                       
+                       </div>
+                </div>       
+        </section>
+
+<!-- Slide 25: BUILDING AREA     -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Building Area   </h2>
+            <div class="slide-content-wrapper1 " >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/MAIN PROCESS AREA6.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+ <!-- Slide 26: BUILDING AREA    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Building Area - Substation   </h2>
+            <div class="slide-content-wrapper">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/BUILDING AREA ( SUBSTATION ).png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/BUILDING AREA ( SUBSTATION )1.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+                </div>
+            </div>
+        </section>
+
+ <!-- Slide 27: Sew Water Intake   -->
+<section id="slide-5" class="slide">
+    <h2 class="text-3xl font-bold text-slate-800 mb-6 slide-header">Sew Water Intake</h2>
+    <div class="slide-content-wrapper space-y-4" style="width: 90%; height: 90%;">
+        
+        <div class="grid grid-cols-1">
+            <div class="bg-white p-4 rounded-xl shadow-lg border-t-4 border-cyan-500">
+                <div class="w-full aspect-[3/2] bg-slate-100 rounded-lg overflow-hidden border border-slate-200">
+                    <img src="images/SEW WATER INTAKE.png" 
+					alt="Technical Drawing of Water Intake" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            
+            <div class="bg-white p-4 rounded-xl shadow-lg border-t-4 border-orange-500">
+                <div class="w-full aspect-square bg-slate-100 rounded-lg overflow-hidden border border-slate-200">
+                    <img src="images/SEW WATER INTAKE 1.png" 
+					alt="Construction of Offshore Pipeline" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-lg border-t-4 border-orange-500">
+                <div class="w-full aspect-square bg-slate-100 rounded-lg overflow-hidden border border-slate-200">
+                    <img src="images/SEW WATER INTAKE 2.png" 
+					alt="Secured Submerged Pipeline" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Slide 28: 132 KV CABLE TRENCH     -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">132 Kv Cable Trench    </h2>
+            <div class="slide-content-wrapper1 " >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/132 KV CABLE TRENCH.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 29:132 KV CABLE TRENCH     -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">132 KV CABLE TRENCH   </h2>
+            <div class="slide-content-wrapper" style="width: 90%; height: 90%;">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/132 KV CABLE TRENCH 1.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/132 KV CABLE TRENCH 2.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 ">
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/132 KV CABLE TRENCH 3.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+<div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 ">
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/132 KV CABLE TRENCH 4.png"
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 30: TYPICAL SEQUENCE WILL FOLLOW AS SHOWN    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Typical Sequence Will Follow As Shown     </h2>
+            <div class="slide-content-wrapper1 " >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS MT2.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 31:CIVIL CONSTRUCTION WORKS   -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Civil Construction Works    </h2>
+            <div class="slide-content-wrapper" style="width: 90%; height: 90%;">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/CIVIL CONSTRUCTION WORKS1.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/CIVIL CONSTRUCTION WORKS2.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 ">
+        <h3 class="text-xl font-bold text-slate-900 mb-3">Pipe Supports    </h3>
+
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS PS1.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+<div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 ">
+        <h3 class="text-xl font-bold text-slate-900 mb-3">Pipe Supports    </h3>
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS PS2.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 32:CIVIL CONSTRUCTION WORKS   -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Civil Construction Works - Pipe Rack   </h2>
+            <div class="slide-content-wrapper" style="width: 90%; height: 90%;">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS PR1.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS PR2.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 ">
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS PR3.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+<div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 ">
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS PR4.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 33: CIVIL CONSTRUCTION WORKS   -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Civil Construction Works - Pipe Rack    </h2>
+            <div class="slide-content-wrapper1 "  >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS PR5.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-lg">
+                            <ul class="text-sm text-slate-600 list-disc list-inside mt-2">
+                                <li>All Excavation works are Manual Excavation .</li>
+                                <li>Existing Cables & UG/AG Line should be be protected during Construction.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                      </div>
+                </div>
+        
+        </section>
+
+<!-- Slide 34:CIVIL CONSTRUCTION WORKS   -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Civil Construction Works - Pipe Trestle Supports    </h2>
+            <div class="slide-content-wrapper" style="width: 90%; height: 90%;">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500" >
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS PTS.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in" >
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500" >
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200" >
+                             <img src="img/CIVIL CONSTRUCTION WORKS PTS1.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in" >
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 " >
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200" >
+                             <img src="img/CIVIL CONSTRUCTION WORKS PTS2.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+<div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 " >
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200" >
+                             <img src="img/CIVIL CONSTRUCTION WORKS PTS3.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in" >
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+        </section>
+
+ <!-- Slide 35: BUILDING AREA    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Civil Construction Works -  Pipe Bridge    </h2>
+            <div class="slide-content-wrapper">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS PB.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS PB1.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+                </div>
+            </div>
+        </section>
+
+
+<!-- Slide 36:CIVIL CONSTRUCTION WORKS   -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Civil Construction Works - Pipe Bridge    </h2>
+            <div class="slide-content-wrapper" style="width: 90%; height: 90%;">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500" >
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS PB2.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in" >
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500" >
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200" >
+                             <img src="img/CIVIL CONSTRUCTION WORKS PB3.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in" >
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 " >
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200" >
+                             <img src="img/CIVIL CONSTRUCTION WORKS PB4.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+<div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 " >
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200" >
+                             <img src="img/CIVIL CONSTRUCTION WORKS PB5.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in" >
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 37: CIVIL CONSTRUCTION WORKS    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Civil Construction Works - Culvert    </h2>
+            <div class="slide-content-wrapper1 " >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="images/Culvert.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 38: CIVIL CONSTRUCTION WORKS  -->
+<section id="slide-5" class="slide">
+    <h2 class="text-3xl font-bold text-slate-800 mb-6 slide-header">Civil Construction Works - Culvert</h2>
+    
+    <div class="slide-content-wrapper space-y-4" style="width: 80%; height: 80%;">
+        <h3 class="text-xl font-bold text-slate-900 mb-3">Doka System Will Be Used For Formwork   </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            
+            <div class="bg-white p-4 rounded-xl shadow-lg border-t-4 border-cyan-500">
+                <div class="w-full aspect-[3/2] bg-slate-100 rounded-lg overflow-hidden border border-slate-200">
+                    <img src="img/CIVIL CONSTRUCTION WORKS CULVERT1.png" 
+					alt="Technical Drawing of Culvert Cross-section" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-lg border-t-4 border-orange-500">
+                <div class="w-full aspect-square bg-slate-100 rounded-lg overflow-hidden border border-slate-200">
+                    <img src="img/CIVIL CONSTRUCTION WORKS CULVERT2.jpg" 
+					alt="Doka Formwork System" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="grid grid-cols-1">
+             <div class="bg-white p-4 rounded-xl shadow-lg border-t-4 border-green-500">
+                <div class="w-full aspect-[5/2] bg-slate-100 rounded-lg overflow-hidden border border-slate-200">
+                    <img src="img/CIVIL CONSTRUCTION WORKS CULVERT3.png" 
+					alt="Bottom Cross Section Detail with Pipes and Crash Barrier" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Slide 39: CIVIL CONSTRUCTION WORKS    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Civil Construction Works -  General Area – Slop Arrangement  </h2>
+            <div class="slide-content-wrapper1 " >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS GASA.png"
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 40: CIVIL CONSTRUCTION WORKS    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Civil Construction Works -  Slop Arrangement   </h2>
+            <div class="slide-content-wrapper1 " >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS SA.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 41: CIVIL CONSTRUCTION WORKS    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Civil Construction Works -  Slop Arrangement   </h2>
+            <div class="slide-content-wrapper1 " >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS SA1.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+ <!-- Slide 42: CIVIL CONSTRUCTION WORKS    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Civil Construction Works -  Undergorund Systems – Installation Strategy    </h2>
+            <div class="slide-content-wrapper">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+        <h3 class="text-xl font-bold text-slate-900 mb-3">Underground Piping Trenches   </h3>
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS US-IS.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500">
+        <h3 class="text-xl font-bold text-slate-900 mb-3">Underground Electrical Trenches   </h3>
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS US-IS1.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+                </div>
+            </div>
+        </section>
+
+ <!-- Slide 43:MODULE TRANSPORTATION -->
+<section id="slide-5" class="slide">
+    <h2 class="text-3xl font-bold text-slate-800 mb-6 slide-header">Civil Construction Works - Module Transportation</h2>
+    <div class="slide-content-wrapper space-y-4">
+  <div class="bg-slate-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-sm text-slate-800">Foundation Strategy & Approach:</h4>
+                            <ul class="text-sm text-slate-600 list-disc list-inside mt-2">
+                                <li>Execute An Approach That Aligns With The Module Delivery Dates.</li>
+                                <li>Assign Multiple Groups To Start Foundation Construction Upon Completion Of Piles Head Cutoff.</li>
+<li>Typical Sequence Will Follow As Shown .</li>
+<li>Non-modularized Foundations Will Be Executed In Parallel To Modularized Foundations.</li>
+                            </ul>
+                        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+            <div class="bg-white p-4 rounded-xl shadow-lg border-t-4 border-orange-500">
+                <div class="w-full aspect-square bg-slate-100 rounded-lg overflow-hidden border border-slate-200">
+                    <img src="img/CIVIL CONSTRUCTION WORKS MT.png" 
+					alt="Construction of Offshore Pipeline" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-lg border-t-4 border-orange-500">
+                <div class="w-full aspect-square bg-slate-100 rounded-lg overflow-hidden border border-slate-200">
+                    <img src="img/CIVIL CONSTRUCTION WORKS MT1.png" 
+					alt="Construction of Offshore Pipeline" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-lg border-t-4 border-orange-500">
+                <div class="w-full aspect-square bg-slate-100 rounded-lg overflow-hidden border border-slate-200">
+                    <img src="img/CIVIL CONSTRUCTION WORKS MT2.png" 
+					alt="Secured Submerged Pipeline" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Slide 44:CIVIL CONSTRUCTION WORKS   -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Civil Construction Works - Marine Transportation    </h2>
+            <div class="slide-content-wrapper" style="width: 90%; height: 90%;">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500" >
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS MARINE T.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in" >
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                                           </div>
+
+                         <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500" >
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200" >
+                             <img src="img/CIVIL CONSTRUCTION WORKS MARINE T1.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in" >
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 " >
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200" >
+                             <img src="img/CIVIL CONSTRUCTION WORKS MARINE T2.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+<div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 " >
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200" >
+                             <img src="img/CIVIL CONSTRUCTION WORKS MARINE T3.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in" >
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+<div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-orange-500 " >
+                         <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200" >
+                             <img src="img/CIVIL CONSTRUCTION WORKS MARINE T4.png" 
+							 alt="Slide 15: Plate and Frame Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in" >
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 15</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_15_PlateFrame.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 45: CIVIL CONSTRUCTION WORKS    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Civil Construction Works -  Module Transportation   </h2>
+            <div class="slide-content-wrapper1 " >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS MODULE T.png"
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 46: CIVIL CONSTRUCTION WORKS    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Civil Construction Works -  Marine Transportation  </h2>
+            <div class="slide-content-wrapper1 " >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS MARINE TRANSPORTATION.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 47: CIVIL CONSTRUCTION WORKS    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Civil Construction Works -  Unloading At Jetty And Transportation On The Route  </h2>
+            <div class="slide-content-wrapper1 " >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS UAJATOTR.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 48: CIVIL CONSTRUCTION WORKS    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Civil Construction Works -  Unloading At Jetty And Transportation On The Route  </h2>
+ <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Heavy Lifting Analysis For Main Equipment: Other Major Columns </h2>
+            <div class="slide-content-wrapper1 " >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS UAJATOTR1.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 49: CIVIL CONSTRUCTION WORKS    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Civil Construction Works - Heavy Lifting For Main Equipment  </h2>
+            <div class="slide-content-wrapper1 " >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS HLFME.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 50: CIVIL CONSTRUCTION WORKS    -->
+        <section id="slide-5" class="slide">
+            <h2 class="text-3xl font-bold text-slate-800 mb-2 slide-header">Civil Construction Works - Heavy Lifting For Main Equipment  </h2>
+            <div class="slide-content-wrapper1 " >
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Air Cooled -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-500">
+                        <!-- Image Container -->
+                        <div class="w-full aspect-[4/3] bg-slate-100 rounded-lg mb-4 overflow-hidden border border-slate-200">
+                             <img src="img/CIVIL CONSTRUCTION WORKS HLFME1.png" 
+							 alt="Slide 13: Air Cooler Diagram" class="zoomable w-full h-full object-contain cursor-zoom-in">
+                             <div class="hidden w-full h-full flex-col items-center justify-center text-center p-4 text-slate-400">
+                                 <p class="text-xs">Save <strong>PPT Slide 13</strong> as<br><code class="bg-slate-200 px-1 rounded">images/Slide_13_AirCooler.jpg</code></p>
+                             </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Slide 51: Conclusion -->
+        <section id="slide-50" class="slide flex flex-col justify-center items-center text-center p-4">
+             <div class="bg-white p-10 md:p-16 rounded-2xl shadow-xl max-w-4xl w-full">
+                <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-4xl mx-auto mb-6">✓</div>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">Course Complete</h1>
+                <p class="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">Thank You</p>
+                <button onclick="location.reload()" class="bg-slate-800 hover:bg-slate-900 text-white font-bold py-3 px-8 rounded-full shadow-lg">
+                    Restart Course
+                </button>
+            </div>
+        </section>
+
+
+
+</main>
+
+ <!-- Footer: Nav -->
+     <footer class="bg-white shadow-inner p-4 z-10 flex-shrink-0 border-t border-slate-200">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <button id="prev-btn" class="bg-white border border-slate-300 text-slate-700 font-bold py-2 px-6 rounded-lg shadow-sm hover:bg-slate-50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+            Previous
+        </button>
+        <div class="flex-1 mx-4">
+            <div class="w-full bg-slate-200 rounded-full h-2.5 overflow-hidden">
+                <div id="progress-bar" class="bg-blue-600 h-2.5 rounded-full transition-all duration-300 ease-out" style="width: 0%;"></div> 
+            </div>
+        </div>
+        <button id="next-btn" class="bg-blue-800 text-white font-bold py-2 px-6 rounded-lg shadow hover:bg-blue-900 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+            Next
+        </button>
+    </div>
+</footer>
+
+
+<!-- Zoom Overlay -->
+<div id="zoomOverlay"
+     class="hidden fixed inset-0 bg-black/80 flex items-center justify-center overflow-hidden z-50">
+    <img id="zoomedImage"
+         class="max-w-[90%] max-h-[90%] rounded-lg transition-transform cursor-zoom-out"
+         src="">
+</div>
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        const prevButton = document.getElementById('prev-btn');
+        const nextButton = document.getElementById('next-btn');
+        const slideCounter = document.getElementById('slide-counter');
+        const progressBar = document.getElementById('progress-bar');
+        
+        // ** إضافة متغير حالة البدء وربط زر Start **
+        let isStarted = false; 
+        const startButton = document.getElementById('start-btn'); // يجب أن يكون هذا الـ ID موجوداً في HTML الشريحة 0
+        // ... (بقية المتغيرات)
+
+        const videoModal = document.getElementById('video-modal');
+        const videoModalContent = document.getElementById('video-modal-content');
+        const youtubeIframe = document.getElementById('youtube-iframe');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+        const playVideoBtns = document.querySelectorAll('.play-video-btn');
+
+        function showSlide(index) {
+            if (index < 0 || index >= totalSlides) return;
+            
+            slides[currentSlideIndex].classList.remove('slide-visible');
+            slides[currentSlideIndex].classList.add('slide-hidden');
+            
+            slides[index].classList.remove('slide-hidden');
+            slides[index].classList.add('slide-visible');
+            
+            currentSlideIndex = index;
+            updateNavigation();
+            
+            // Scroll top content
+            const content = slides[index].querySelector('.slide-content-wrapper');
+            if (content) content.scrollTop = 0;
+        }
+
+        function updateNavigation() {
+            slideCounter.textContent = `Slide ${currentSlideIndex + 1} / ${totalSlides}`;
+            const progressPercentage = ((currentSlideIndex + 1) / totalSlides) * 100;
+            progressBar.style.width = `${progressPercentage}%`;
+            
+            prevButton.disabled = (currentSlideIndex === 0);
+            
+            // ** المنطق المُعدّل لزر Next **
+            // يتم التعطيل فقط إذا: 
+            // 1. كنا في الشريحة الأخيرة.
+            // 2. أو كنا في الشريحة 0 ولم نضغط على Start بعد.
+            const shouldBeDisabled = (currentSlideIndex === totalSlides - 1) || 
+                                     (currentSlideIndex === 0 && !isStarted);
+                                     
+            nextButton.disabled = shouldBeDisabled;
+        }
+
+        prevButton.addEventListener('click', () => showSlide(currentSlideIndex - 1));
+        
+        // ** ملاحظة: زر Next سيتفعل تلقائياً بعد الانتقال للشريحة 1 **
+        nextButton.addEventListener('click', () => showSlide(currentSlideIndex + 1));
+
+        // ** مستمع حدث زر Start (التعديل الرئيسي) **
+        if (startButton) {
+            startButton.addEventListener('click', () => {
+                isStarted = true; // تفعيل حالة البدء
+                
+                // الانتقال إلى الشريحة التالية (الشريحة 1)
+                showSlide(currentSlideIndex + 1);
+                
+                // إخفاء زر Start بعد بدء الدورة
+                // إذا لم تكن تريد إخفاءه، احذف السطر التالي
+                startButton.classList.add('hidden'); 
+            });
+        }
+        
+        // ... (بقية أكواد الـ Video Modals والـ Zoom)
+
+        const zoomableImages = document.querySelectorAll(".zoomable");
+        const overlay = document.getElementById("zoomOverlay");
+        const zoomImg = document.getElementById("zoomedImage");
+
+        let scale = 1;
+        let isDragging = false;
+        let startX, startY;
+        let translateX = 0;
+        let translateY = 0;
+
+        zoomableImages.forEach(img => {
+            img.addEventListener("click", () => {
+                zoomImg.src = img.src;
+                scale = 1;
+                translateX = 0;
+                translateY = 0;
+                zoomImg.style.transform = `translate(0px, 0px) scale(1)`;
+                overlay.classList.remove("hidden");
+            });
+        });
+
+        overlay.addEventListener("click", (e) => {
+            if (e.target === overlay) {
+                overlay.classList.add("hidden");
+            }
+        });
+
+        zoomImg.addEventListener("wheel", (e) => {
+            e.preventDefault();
+            scale += e.deltaY < 0 ? 0.1 : -0.1;
+            if (scale < 1) scale = 1;
+            if (scale > 5) scale = 5;
+            zoomImg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+        });
+
+        zoomImg.addEventListener("mousedown", (e) => {
+            if (scale <= 1) return;
+            isDragging = true;
+            zoomImg.style.cursor = "grabbing";
+            startX = e.clientX - translateX;
+            startY = e.clientY - translateY;
+        });
+
+        zoomImg.addEventListener("mousemove", (e) => {
+            if (!isDragging) return;
+            translateX = e.clientX - startX;
+            translateY = e.clientY - startY;
+            zoomImg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+        });
+
+        zoomImg.addEventListener("mouseup", () => {
+            isDragging = false;
+            zoomImg.style.cursor = "grab";
+        });
+
+        zoomImg.addEventListener("mouseleave", () => {
+            isDragging = false;
+        });
+        
+        // تهيئة البدء
+        updateNavigation();
+    });
+</script>
+
+   </body>
+</html>
